@@ -1,0 +1,50 @@
+@keyframes fadeInDown {
+  0% {
+      opacity: 0;
+      transform: translate3d(0, 20%, 0);
+  }
+  to {
+      opacity: 1;
+      transform: translateZ(0);
+  }
+}
+
+.fadeInDown {
+  animation: fadeInDown 2s;
+}
+
+.poster.fadeInDown {
+  opacity: 1; 
+}
+
+
+.poster {
+  position: relative;
+  margin: 20px;
+  opacity: 0;
+  width: 200px;
+  transition: opacity 2s ease;
+}
+
+
+.poster:hover .more {
+  opacity: 1;
+}
+
+
+
+.poster::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 300px;
+  background-image: linear-gradient(to bottom right, rgb(16, 114, 45), rgba(167, 219, 46, 0.3));
+  opacity: 0; 
+  
+}
+
+.poster:hover::before {
+  opacity: 1; 
+}

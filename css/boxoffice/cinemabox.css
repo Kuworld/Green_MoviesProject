@@ -1,0 +1,99 @@
+.pop-up{
+ position: fixed;
+ height: 100%;
+ width: 100%;
+}
+
+.darken-background{
+ z-index: 150;
+ background-color: rgba(0,0,0,0.7);
+}
+
+.cinema-box{
+  position: fixed;
+  visibility: hidden;
+  background-color: black;
+  z-index: 200;
+}
+
+.expand-cinema{
+  transform: translate(0, -50%);
+  visibility: visible;
+  animation: expandCinema 1s forwards;
+}
+
+@keyframes expandCinema{
+  0%{
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    height: 0;
+  }
+  50%{
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 30px;
+  }
+  100%{
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 460px;
+  }
+  
+}
+
+
+.cinema-box .video{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  visibility: hidden;
+  animation-delay: 1s;
+  animation-name: showVid;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showVid{
+  0%{
+    opacity: 0;
+    visibility: hidden;
+  } 
+  100%{
+    opacity: 1;
+    visibility: visible;
+  } 
+}
+
+.vid-container{
+  position: relative;
+}
+.cinema-box .close{
+  position: absolute;
+  left: 50%;
+  z-index: -10;
+  transform: translate(-50%);
+}
+
+.cinema-box .showClose{
+  animation-delay: 1.3s;
+  animation-name: showClose;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes showClose{
+  0%{
+    top: 0;
+    opacity: 0; 
+  }
+  100%{
+    top: -8%;
+    opacity: 1;
+  }
+}
+

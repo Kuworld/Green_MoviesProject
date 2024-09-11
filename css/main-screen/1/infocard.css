@@ -1,0 +1,60 @@
+.main-screen-1 .info-card{
+  position: absolute;
+  top: 0;
+  left: -420px;
+  width: 100%;
+  height: 100%;
+}
+
+.main-screen-1 .inner-info-card{
+ position: absolute;
+ top: 0;
+ height: 100%;
+ left: 0;
+ text-align: center;
+}
+
+.main-screen-1 .inner-info-card ul{
+  width: 500px;
+}
+
+.main-screen-1 .inner-info-card li{
+  margin-top: 30px;
+  color: white;
+}
+
+.main-screen-1 .inner-inner-info-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main-screen-1 .inner-info-card .logo{
+  animation: textMoveDelay 4s;
+}
+.main-screen-1 .inner-info-card .logo img{
+  border-radius: 30px;
+}
+.main-screen-1 .inner-info-card .intro{
+  animation: textMoveDelay 4.5s;
+}
+.main-screen-1 .inner-info-card .btn{
+  animation: textMoveDelay 5s;
+}
+
+
+@keyframes textMoveDelay{
+  0%{
+    transform: translate(0, 160px);
+    opacity: 0;
+  }
+  50%{
+    transform: translate(0, 160px);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}

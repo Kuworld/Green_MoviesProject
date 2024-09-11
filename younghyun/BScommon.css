@@ -1,0 +1,284 @@
+
+
+body { margin: 0; padding: 0; height: 3500px; }
+
+       
+   
+        .BSmain{
+            height: 3500px;
+        }
+
+        #BSMainID{
+            animation : fadeBSMain 3s ease;
+        }
+
+        @keyframes fadeBSMain{
+            0% {
+                opacity : 0;                
+            }
+            100% {
+                opacity : 1;                
+            }
+        }
+
+        .BSmainDiv1{
+            display:flex;
+            height: 300px;
+
+            background-image: url("img/BSmain.jpg"); 
+            background-size: cover; 
+            background-repeat: no-repeat;
+
+            justify-content: center; 
+            align-items: center;
+
+            
+            font-size: 70px;
+            font-weight: bold;
+            color: white;
+
+            border-bottom-left-radius: 50% 60px;
+            border-bottom-right-radius: 50% 60px;
+        }
+
+
+
+
+
+
+        .BSmainDiv1_1{
+            height : 700px;
+            text-align: center;
+        }
+
+        #BA{
+            margin-top: 100px;
+            font-size : 40px;
+        }
+
+
+        .Div1_1inn{
+            display: inline-block;
+            width : 250px;
+            height: 300px;
+            border : 1px solid lightgray;
+
+            padding: 15px;
+            margin : 10px;
+            margin-top : 30px;
+            margin-bottom : 100px;
+        }
+
+        .Div1_1boxTitle{
+            font-size : 22px;
+            font-weight : bold;
+        }
+
+
+
+
+        .BSmainDiv1_2{
+            height: 300px;
+        }
+
+        .BSmainDiv1_2Imgbox{
+            height: 300px;
+            position : relative;
+            transform: translate(-50%, 0%);
+        }
+
+
+        .BSmainDiv1_2Img{
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+
+
+
+
+
+        .BSmainDiv2{
+            height: 1000px;
+            text-align: center;
+        }
+
+        .Div2Text{
+            margin-top: 100px;
+        }
+
+        #BSBaO{
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        
+        .Div2innerBox{
+            position: relative;
+            width: 1600px;
+            transform: translate(-50%, 0%)
+        }
+
+        .inn {
+            display: flex;
+            justify-content: center;
+            width: 210px;
+            border-radius: 10px;
+            background-color: lightgray;
+        }
+
+        #inn1 { position : absolute; left: 350px; transform: translate(-50%, 0%); } 
+        #inn2 { position : absolute; left: 650px; transform: translate(-50%, 0%); }
+        #inn3 { position : absolute; left: 950px; transform: translate(-50%, 0%); } 
+        #inn4 { position : absolute; left: 1250px; transform: translate(-50%, 0%); }
+
+        
+
+        .BSname {
+            padding: 15px;
+        }
+
+        .BSth{
+            font-size: 20px;
+        }
+
+        .innHidden {
+            display: none;
+            transition: display 0.5s ease;
+        }
+
+        .innHidden div{
+            border-top: 1px solid gray;
+            padding: 10px;
+        }
+
+        .BSname:hover .innHidden {
+            display: table-row;
+        }
+        
+
+        .BSpick {
+            text-decoration: none;
+            color: blue;
+            font-size: 20px;
+            font-family: '휴먼편지체';
+            font-weight: bold;
+        }
+
+        .BSpick:hover {
+            font-size: 30px;
+            color: green;
+            animation: zoompick 1s infinite alternate;
+        }
+
+        @keyframes zoompick{
+            0%{
+                font-size: 20px;
+                color: blue;
+            }
+            100%{
+                font-size: 30px;
+                color: green;
+            }
+        }
+        
+
+
+
+
+
+        .BSmainDiv3{
+            height: 300px;
+        }
+
+        .BSmainDiv3Imgbox{
+            height: 300px;
+            position : relative;
+            transform: translate(-50%, 0%);
+        }
+
+
+        .BSmainDiv3Img{
+            position:absolute;
+            width: 100%;
+            height: 100%;
+            display: none;
+
+        }
+
+
+
+
+
+
+        .BSmainDiv4{
+            height: 600px;
+            text-align: center;
+            padding : 30px;
+        }
+
+        #BSmainDiv4p{
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .BSmainDiv4Big{
+            position: absolute;
+            border: 1px solid gray;
+            border-radius: 30px;
+            width: 500px;
+            transform:translate(-50%,0%);
+        }
+
+        #BSmainDiv4p2{
+            font-size: 18px;
+        }
+
+        .BSmainDiv4Imgbox{
+            display:block;
+            height: 300px;
+        }
+
+        .BSchooseImg{
+            position : absolute;
+            width: 200px;
+            height: 280px;
+            transform: translate(-50%, 0%);
+            border: 1px solid gray;
+        }
+
+        #BSbuttonBox{
+            margin-bottom: 20px;
+        }
+        
+
+        .BStop{
+            position: absolute;
+            top: 3400px;
+        }
+
+
+        @keyframes movingButt{
+            0% { transform: translateY(0)}
+            25% { transform: translateY(0)}
+            50% { transform: translateY(-25px)}
+            75% { transform: translateY(0)}
+            100% { transform: translateY(0)}
+        }
+
+        #BStopbut{
+            width: 70px;
+            height: 70px;
+            border-radius: 35px;
+            border: 1px solid gray;
+            overflow: hidden;
+
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+
+        
+

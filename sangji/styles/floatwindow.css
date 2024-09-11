@@ -1,0 +1,188 @@
+#floatwindowclose{
+  position:fixed;
+  display: none;
+  z-index: 5;
+  top: 5%; 
+  left: 50%;
+  transform: translate(-50%, -30%);
+  z-index: 20;
+}
+
+#floatwindowclose img{
+  width: 50px;
+}
+
+#floatWindow{
+  position:fixed;
+  top: 45%; 
+  left: 50%;
+  width:1200px;
+  height:675px; 
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 2px solid grey;
+  display: none;
+  background-color: white;
+  z-index: 5;
+}
+
+#floatWindow dl{
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+#floatWindow dl dd{
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+
+#floatWindow dl dd #movietrailer {
+width: 1200px; 
+height: 675px; 
+position: relative;
+display: block; 
+text-align: center; 
+}
+
+#floatWindow dl dd #movietrailer iframe {
+width: 100%;
+height: 100%;
+position: absolute;
+display: block; 
+margin: 0 auto; 
+}
+
+#floatWindow dl dd #overview {
+height: 680px;
+position: relative;
+}
+
+#floatWindow dl dd #movieposters {
+  height: 100%;
+  width: 40%;
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+
+
+#floatWindow dl dd #movieposter1{
+  height:100px;
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+}
+#floatWindow dl dd #movieposter1 img{
+  height: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+#floatWindow dl dd #movieposter2{
+  height: 100px;
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+}
+#floatWindow dl dd #movieposter2 img{
+  height: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+#floatWindow dl dd #movieposter3{
+  height: 100px;
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+}
+#floatWindow dl dd #movieposter3 img{
+  height: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+
+#floatWindow dl dd #moviedetails{
+  width: 50%;
+  height: 100%;
+  float: right;
+  margin-right: 50px;
+}
+
+
+#floatWindow dl dd #movietitle {
+display: block;
+float: left;
+width: 500px;
+height: 100px;
+font-size: 40px;
+margin-top: 40px;
+margin-left: 30px;
+text-align: left;
+position: relative; 
+border-bottom: 1px solid gray;
+letter-spacing: -1px;
+}
+
+
+#moviedetailtable table {
+border-collapse: collapse;
+text-align: left;
+width: 90%;
+position: relative;
+display: inline-block;
+margin-top: 20px;
+}
+
+
+#moviedetailtable td {
+padding: 3px;
+
+}
+
+#moviedetailtable td:first-child {
+font-weight: bold;
+font-size: 15px;
+font-weight: 500;
+letter-spacing: -0.5px;
+
+}
+
+#moviedetailtable td:last-child {
+font-size: 13px;
+font-weight: 300;
+letter-spacing: -0.5px;
+
+}
+
+#floatWindow dl dd #movieplot{
+  display: inline-block;
+  width:90%;
+  height: 200px;
+  font-size: 13px;
+  line-height: 2;
+  margin: 20px;
+  font-weight: 300;
+  text-align: left;
+}
+
+#floatWindow dl dd #snslink{
+  width:500px;
+  height: 100px;
+}
+
+#floatWindow dl dd #snslink img {
+  display: inline-block; 
+  margin:30px 0px 10px 10px;
+}
+
+.selectedImage img {
+  border: 2px solid gray; 
+}

@@ -1,0 +1,21 @@
+.tab_years {
+  font-family: 'YoonGothic', sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tab_years ul {
+  display: inline-block;
+  padding: 0;
+}
+
+.tab_years ul li {
+  display: inline-block;
+  margin-right: 20px; 
+  font-size: 1em; 
+}
+
+.tab_years ul li:hover {
+  color: gray; 
+}

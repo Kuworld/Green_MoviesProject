@@ -1,0 +1,25 @@
+#nowshowing {
+  text-align: center;
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+#nowshowing ul {
+  list-style:none;
+  padding: 0;
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+#nowshowing li {
+  display: inline-block; 
+  margin: 20px; 
+  width: 200px; 
+  margin-bottom: 40px; 
+}
+
+#nowshowing ul li img {
+  width: 200px;
+  height: 300px;
+}

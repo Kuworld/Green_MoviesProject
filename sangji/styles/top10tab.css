@@ -1,0 +1,25 @@
+#top10_tab {
+  text-align: center;
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+#top10_tab ul {
+  list-style:none;
+  padding: 0;
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+#top10_tab li {
+  display: inline-block; 
+  margin: 20px; 
+  width: 200px; 
+  margin-bottom: 40px; 
+}
+
+#top10_tab ul li img {
+  width: 200px;
+  height: 300px;
+}

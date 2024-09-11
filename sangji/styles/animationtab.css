@@ -1,0 +1,25 @@
+#animation_tab {
+  text-align: center;
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+#animation_tab ul {
+  list-style:none;
+  padding: 0;
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+#animation_tab li {
+  display: inline-block; 
+  margin: 20px; 
+  width: 200px; 
+  margin-bottom: 40px; 
+}
+
+#animation_tab ul li img {
+  width: 200px;
+  height: 300px;
+}

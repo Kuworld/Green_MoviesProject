@@ -1,0 +1,33 @@
+#scrollimage{
+  animation: scroll 2s linear 0s; 
+  margin-top: 0;
+  position:fixed;
+  display: none;
+  top: 68%; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  opacity: 0;
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+  20% {
+    margin-top: 20px;
+  }
+  40% {
+    margin-top: 0px;
+  }
+  60% {
+    margin-top: 20px;
+  }
+  80% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 0;
+  }
+}

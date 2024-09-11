@@ -1,0 +1,58 @@
+#box-office .poster-box{
+  position: relative;
+  width: 600px;
+  height: 600px; 
+}
+
+#box-office .poster-box > div{
+  position: relative;
+  width: 2000px;
+  overflow: hidden;
+  height: 740px;
+}
+
+#box-office .poster-box ul{
+  white-space: nowrap;
+  text-align: left;
+}
+
+#box-office .poster-box ul li{
+  width: 420px;
+  height: 600px;
+  display: inline-block;
+  margin-right: 72px;
+  transition: all 0.3s;
+  border: 1px solid rgba(0,0,0,0.86);
+  box-sizing: border-box;
+  position: relative;
+}
+
+#box-office .poster-box li > div{
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%);
+}
+
+#box-office .poster-box li > div .arrow{
+  margin-bottom: 10px;
+  background-color: black;
+  animation: arrowHover 3s infinite;
+}
+
+@keyframes arrowHover{
+  0%{
+    transform: translate(0, -45%);
+  }
+  50%{
+    transform: translate(0, 50%);
+  }
+  100%{
+    transform: translate(0, -45%);
+  }
+}
+
+#box-office .poster-box li > div .click-here{
+  font-size: 19px;
+}

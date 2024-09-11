@@ -1,0 +1,16 @@
+.info-card span, .info-card p{
+  font-family: 굴림;
+  font-size: 22px;
+}
+
+.info-card .title, #box-office li.title, .poster-box span.title{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#box-office h3{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.info-card .title, #box-office li.title{
+  font-size: 40px;
+}

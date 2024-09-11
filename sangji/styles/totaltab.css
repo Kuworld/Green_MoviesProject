@@ -1,0 +1,25 @@
+#total_tab {
+  text-align: center;
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+#total_tab ul {
+  list-style:none;
+  padding: 0;
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+#total_tab li {
+  display: inline-block; 
+  margin: 20px; 
+  width: 200px; 
+  margin-bottom: 40px; 
+}
+
+#total_tab ul li img {
+  width: 200px;
+  height: 300px;
+}

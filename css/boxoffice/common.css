@@ -1,0 +1,56 @@
+#box-office{
+  position: relative; 
+  margin-top: 414px;
+  text-align: center;
+}
+
+#box-office h3{
+  position: relative;
+  font-size: 42px;
+  color: #fff;
+  z-index: 1;
+}
+
+#box-office .box-office-contents{
+  position: relative;
+  width: 1080px;
+  margin: 96px auto 0;
+}
+
+#box-office .box-office-contents .bg{
+  position: absolute;
+  top: -450px;
+  left: -450px;
+  z-index: 0;
+}
+
+#box-office .bg img:nth-child(1){
+  position: relative;
+}
+
+#box-office .bg img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#box-office .bg .active{
+  opacity: 1;
+}
+
+#box-office .bg img.prev{
+  opacity: 1;
+  z-index: 1;
+}
+
+#box-office .bg img.on{
+  opacity: 1;
+  z-index: 2;
+  transition: opacity 0.5s;
+}
+
+#box-office .box-office-contents > div{
+  vertical-align: top;
+  display: inline-block;
+}

@@ -1,0 +1,150 @@
+
+.poster-list{
+  position: relative;
+  margin: 95px auto 0;
+  width: 1250px;
+}
+
+li{
+  list-style: none;
+}
+
+.poster-list > .detail-btn{
+  position: absolute;
+  top: -34px;
+  right: 86px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #333333;
+}
+
+.poster-list .poster-box{
+  position: relative;
+  width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.poster-list ul{
+  white-space: nowrap;
+}
+
+.poster-list li{
+  position: relative;
+  display: inline-block;
+  width: 320px;
+  vertical-align: top;
+  margin-right: 60px;
+}
+
+.poster-list .bg{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 460px;
+  border: 1px solid rgba(33, 19, 19, 0.06);
+  overflow: hidden;
+}
+
+.poster-list .bg-content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: ease-out 1s;
+}
+
+.poster-list .bg:hover .bg-content{
+  transform: scale(1.2);
+}
+
+.poster-list .bg-covered{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  transition: ease-out 1s;
+}
+
+.poster-list .bg:hover .bg-covered{
+  background-image: linear-gradient(to bottom right, rgb(16, 114, 45), rgba(167, 219, 46, 0.3));
+}
+
+.poster-list .bg .detail-btn{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+  visibility: hidden;
+}
+.poster-list .bg:hover .detail-btn{
+  visibility: visible;
+}
+
+.poster-list .bg .detail-btn a{
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  width: 136px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  text-align: center;
+  transition:  all 0.3s;
+  color: white;
+}
+
+.poster-list .bg .detail-btn a:hover{
+  background-color: white;
+  color: black;
+}
+
+.poster-list li span{
+  position: relative;
+  z-index: 5;
+}
+
+.poster-list .title{
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+  color: #222222;
+  line-height: 30px;
+  margin: 26px 0 16px;
+  white-space: normal;
+  letter-spacing: -0.4px;
+}
+
+.poster-list .state{
+  color: #fe3333;
+  font-size: 12px;
+  font-weight: 400;
+  vertical-align: bottom;
+  margin-left: 11px;
+}
+
+.poster-list .type{
+  display: block;
+  color: #222222;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.poster-list .arrows{
+  text-decoration: none;
+  position: absolute;
+  top: 206px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.poster-list .r-arrow{
+  right: 0;
+}
+
+.poster-list .l-arrow{
+  left: 0;
+}

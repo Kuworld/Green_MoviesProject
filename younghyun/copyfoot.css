@@ -1,0 +1,46 @@
+.copyfoot{
+    display: flex;
+    height: 100px;
+    background-color: black;
+    color: gray;
+    font-weight: bold;
+
+    justify-content: center;
+    align-items: center;
+
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+    position: relative;
+}
+
+.copyfoot .copyImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyfoot .copyTxt{
+    margin-left: 10px;
+}
+
+.copyfoot .copyTxt #copyright{
+    font-size: 12px;
+}
+
+/*
+    body 맨 밑에 footer 붙여주고 copyfoot.css 링크해주면 메인 화면 맨 밑에 세로100px의 저작권 붙음
+*/
+
+/*
+    footer 견본
+
+    <footer class="copyfoot">
+        <div class="copyImg"><img src="img/copyright.png" height="60px"></div>
+        <div class="copyTxt">서울특별시 강남구 그린로 4길 25 | +82 02-9494-9494 | GreenMV@greenmoives.co.kr <br>
+            <span id="copyright"> &copy 2024 Green Movies. All Rights Reserved</span></div>
+    </footer>
+
+
+*/

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Movies</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="scripts/all_tab.js"></script>
+    <script src="scripts/nowshowing_tab.js"></script>
+    <script src="scripts/movie_tab.js"></script>
+    <script src="scripts/animation_tab.js"></script>
+    <script src="scripts/top10_tab.js"></script>
+    <script src="scripts/moviedetail.js"></script>
+    <script src="scripts/windowload.js"></script>
+    <script src="scripts/posterexpansion.js"></script>
+   
+    <link rel="stylesheet" href="styles/alltab.css">
+    <link rel="stylesheet" href="styles/animationtab.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/fadeindown.css">
+    <link rel="stylesheet" href="styles/floatwindow.css">
+    <link rel="stylesheet" href="styles/tab_area.css">
+    <link rel="stylesheet" href="styles/totaltab.css">
+    <link rel="stylesheet" href="styles/nowshowing.css">
+    <link rel="stylesheet" href="styles/movietab.css">
+    <link rel="stylesheet" href="styles/top10tab.css">
+    <link rel="stylesheet" href="styles/work_top.css">
+    <link rel="stylesheet" href="styles/tab_area.css">
+    <link rel="stylesheet" href="styles/poster.css">
+    <link rel="stylesheet" href="styles/overview.css">
+    <link rel="stylesheet" href="styles/snslinkcursor.css">
+    <link rel="stylesheet" href="styles/moreBtn.css">
+    <link rel="stylesheet" href="styles/scroll.css">
+    <link rel="stylesheet" href="styles/listcount.css">
+
+    <link rel="stylesheet" href="../younghyun/copyfoot.css">
+
+    //css header
+    <link rel="stylesheet" href="./../css/header.css">
+  </head>
+
+  <body>
+    <header class="topBar">
+      <div class="centerDiv">
+        <ul>
+            <li> <a href="./../index.html">ABOUT</a> </li>
+            <li> <a href="./../younghyun/project.html">BUSINESS</a></li>
+            <li class="active"> <a href="#">WORKS</a></li>
+            <li> <a href="./../Inmo/press.html">PRESS</a></li>
+        </ul>
+      </div>
+    </header>
+    <div id="works_top">
+      <img src="image/workbackground.jpg" alt="Work Background">
+      <span id="worksindex"> WORKS </span>
+    </div>
+
+    <div class="tab_area">
+      <ul id="tabList">
+        <li id="firstshow" onclick="allHTML()"> ALL <br> <img id="alltabimg" src="image/alltabimage.png" style="opacity: 0; position: relative; top: -20px;"> </img> </li>
+        <li onclick="nowshowingHTML()">NOW SHOWING <br> <img id="nowshowingtabimg" src="image/nowshowingtabimage.png" style="opacity: 0; position: relative; top: -20px;"> </img> </li>
+        <li onclick="movieHTML()">MOVIE <br>  <img id="movietabimg" src="image/movietabimage.png" style="opacity: 0; position: relative; top: -20px;"> </img> </li>
+        <li onclick="animationHTML()"> ANIMATION <br>  <img id="animationtabimg" src="image/animationtabimage.png" style="opacity: 0; position: relative; top: -20px;"> </img></li>
+        <li onclick="top10HTML()">TOP 10 <br>  <img id="top10tabimg" src="image/top10tabimage.png" style="opacity: 0; position: relative; top: -20px;"> </img> </li>
+      </ul>
+    </div>
+
+    <div id="floatwindowclose"> <a href="#" class="close">
+      <img src="image/close.png" alt="닫힘"/> </div>
+
+    <div id="scrollimage"> <img src="image/scroll.png" style="height: 80px;"></div>
+
+    <div id="floatWindow"> 
+      <dl>
+        <dt>
+            
+        </dt>
+          <dd> 
+            
+            <div id="movietrailer"> </div>
+            <div id="overview">
+              <div id="movieposters">
+                <img id="img" style="cursor: pointer; margin-top:20px;" height="500px" >
+                <div id="moviepostersmall">
+                    <div id="movieposter1"> <a class="imgLink selectedImage" href="#"> </a> </div>
+                    <div id="movieposter2"> <a class="imgLink" href="#"> </a> </div>
+                    <div id="movieposter3"> <a class="imgLink" href="#"> </a> </div>
+                </div>
+            </div>
+                      
+                <div id="moviedetails">
+                  <div id="movietitle"> </div>
+                  <div id="moviedetailtable"></div>
+                  <div id="movieplot"></div>
+                  <div id="snslink">
+                    <img id="youtube" src="image/youtube.png" width="50px"> 
+                    <img id="facebook" src="image/facebook.png" width="50px"> 
+                    <img id="instagram" src="image/instagram.png" width="50px">
+                    <img id="twitter" src="image/twitter.png" width="50px">
+                  </div>
+                </div>
+              </div>
+          </dd>
+        </dl>
+        
+        </div>
+  
+    <div id="total_tab">
+      <ul>
+        <li>
+          <div class="dune2 poster" data-category="movie" data-year="2024" id="top10">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/8uUU2pxm6IYZw8UgnKJyx7Dqwu9.jpg">
+            <div class="title"> 듄: 파트2</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="693134">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="dune1 poster" data-category="movie" data-year="2021">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/7zV8FTYofAORGm0Umgh1mNNCym8.jpg">
+            <div class="title"> 듄: 파트1</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="438631">자세히보기</a></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="beautyandthebeast poster" data-category="movie" data-year="2017">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/tzYsKo6wGoBrP51eL9wDzfDP6Vx.jpg">
+            <div class="title">미녀와 야수</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="321612">자세히보기</a></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="madmaxpuriosa poster" data-category="movie" data-year="2024">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/9i4s5U9hNVnQwspwPhVGlGRg6p4.jpg">
+            <div class="title">퓨리오사:매드맥스 사가</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="786892">자세히보기</a></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="madmax poster" data-category="movie" data-year="2015" id="top10">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/cadVm6gKYYukmPysHGCwrawUHHa.jpg">
+            <div class="title">매드맥스:분노의 도로</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="76341">자세히보기</a></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="elemental poster" data-category="animation" data-year="2023" id="top10">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/w7eApyAshbepBnDyYRjSeGyRHi2.jpg">
+            <div class="title"> 엘리멘탈 </div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="976573">자세히보기</a></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="nocountryforoldmen poster" data-category="movie" data-year="2007">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/2SU078qZf8ZTNfl6XlqgYiQohhG.jpg">
+            <div class="title">노인을 위한 나라는 없다</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="6977">자세히보기</a></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="lonesurvivor poster" data-category="movie" data-year="2013" id="top10">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/sOGiT2JfE98FEsHStcotWfSBCW2.jpg">
+            <div class="title">론 서바이버</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="193756">자세히보기</a></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="thedarkknight poster" data-category="movie" data-year="2008" id="top10">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/9ICUbdveP56jRoMMVkXSOr3ceyV.jpg">
+            <div class="title">다크 나이트</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="155">자세히보기</a></div>
+          </div>
+        </li>
+
+
+        <li>
+          <div class="theavengers poster" data-category="movie" data-year="2012">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/1uHRkB2Q00Y4i7I7KNd0jGi4OmY.jpg">
+            <div class="title">어벤져스</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="24428">자세히보기</a></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="avengersinfinitywar poster" data-category="movie" data-year="218" id="top10">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/kmP6viwzcEkZeoi1LaVcQemcvZh.jpg">
+            <div class="title">어벤져스 인피니티 워</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="299536">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="exhuma poster" data-category="movie" data-year="2024">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/aJLOmEwCLJIznN96m3t9IMz12or.jpg">
+            <div class="title"> 파묘 </div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="838209">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="wish poster" data-category="animation" data-year="2024">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/lnOgP8Fl2dQ73d4Qu24O2zcKFFS.jpg">
+            <div class="title"> 위시</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="1022796">자세히보기</a></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="starwars poster" data-category="movie" data-year="1977">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/7XFfURIFCJxN1mfBg0SAjk5yGzg.jpg">
+            <div class="title"> 스타워즈</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="11">자세히보기</a></div>
+          </div>
+        </li>
+   
+        <li>
+          <div class="wonka poster now" data-category="movie" data-year="2024">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/g5mGMbiZLvgEf628D60GQrPHFJC.jpg">
+            <div class="title">웡카</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="787699">자세히보기</a></div>
+          </div>
+        </li>
+
+  
+        <li>
+          <div class="ourtimes poster" data-category="movie" data-year="2015">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/zhKnBHB3CvwfUQMXdyd2eiaSKex.jpg">
+            <div class="title">나의 소녀시대</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="354072">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="topgun poster" data-category="movie" data-year="2022" id="top10">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/jeqXUwNilvNqNXqAHsdwm5pEfae.jpg">
+            <div class="title">탑건: 매버릭</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="361743">자세히보기</a></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="KungFuPanda4 poster" data-category="animation" data-year="2023">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/vMaqgPgMhO1XvwzoEAurUKVQJNV.jpg">
+            <div class="title">쿵푸팬더 3</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="140300">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="KungFuPanda4 poster" data-category="animation" data-year="2024">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/1ZNOOMmILNUzVYbzG1j7GYb5bEV.jpg">
+            <div class="title">쿵푸팬더 4</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="1011985">자세히보기</a></div>
+          </div>
+        </li>
+
+  
+        <li>
+          <div class="theoutlaws poster now" data-category="movie" data-year="2017">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/ayk6y2D5v5VACFqrPfF05MARZ9n.jpg">
+            <div class="title">범죄도시</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="479718">자세히보기</a></div>
+          </div>
+        </li>
+    
+        <li>
+          <div class="alienoid1 poster" data-category="movie" data-year="2022" id="top10">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/ynyN9hdxL5vq7GnSX8Fdz3TfoTE.jpg">
+            <div class="title">외계+인 1부</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="601796-1">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="alienoid2 poster" data-category="movie" data-year="2024">
+            <img src="https://image.tmdb.org/t/p/w200/epEn2mSjSAKQspivRufrqlnC1lq.jpg"></a>
+            <div class="title"> 외계+인 2부 </div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="626412-2">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="slamdunk poster" data-category="animation" data-year="2022">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/coiJrdXAXuBkSGDvp9bZ7mkuU6E.jpg">
+            <div class="title">더 퍼스트 슬램덩크</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="783675">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="yourname poster" data-category="animation" data-year="2016">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/2DJCufz3Oa703PbLjNX1pM6MCG2.jpg">
+            <div class="title">너의 이름은</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="372058">자세히보기</a></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="suzume poster" data-category="animation" data-year="2022">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/95cnAy1nqjoEev1YkaXrSf0NDa1.jpg">
+            <div class="title">스즈메의 문단속</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="916224">자세히보기</a></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="jaws poster" data-category="movie" data-year="1975">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/nRSaeJUXuXFYOQNRSsLvBLmZa48.jpg">
+            <div class="title">죠스</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="578">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="yourname poster" data-category="movie" data-year="2016">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/ayLXqPZCu3uaLLhXiqvw5NBb7Lw.jpg">
+            <div class="title">밀수</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="783110">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="strongwoman poster" data-category="movie" data-year="2023">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/eDps1ZhI8IOlbEC7nFg6eTk4jnb.jpg">
+            <div class="title">아쿠아맨과 로스트 킹덤</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="572802">자세히보기</a></div>
+          </div>
+        </li>
+  
+  
+        <li>
+          <div class="up poster" data-category="animation" data-year="2009" >
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/lL2WzkjLZP0RkPgUhybBjb9x9SL.jpg">
+            <div class="title"> 업 </div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="14160">자세히보기</a></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="jurassicpark poster" data-category="movie" data-year="1993"  id="top10">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/m4T4h20ame5nG7a5iNPCwk0pHEG.jpg">
+            <div class="title">쥬라기 공원</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="1011985">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="avatar poster" data-category="movie" data-year="2016" id="top10">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/zygmx5abXeDpr3fWYX4jlXFZ1wh.jpg">
+            <div class="title">아바타</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="19995">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="avatarthewayofwater poster" data-category="movie" data-year="2019">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/z56bVX93oRG6uDeMACR7cXCnAbh.jpg">
+            <div class="title">아바타: 물의 길</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="76600">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="strongwoman poster" data-category="movie" data-year="2023">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/f9CQblm419ysGBS697WUfGN0FoI.jpg">
+            <div class="title">어바웃 타임</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="122906">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="OneMillionYen poster" data-category="movie" data-year="2008">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/3GnM3Y7AWZFPKMsKRV89DebAlTv.jpg">
+            <div class="title">백만엔걸 스즈코</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="69454">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="toystory3 poster" data-category="animation" data-year="2010">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/hbUWahBLUon8RaIb9Tq7aWCBCtS.jpg">
+            <div class="title">토이스토리</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="10193">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="spiderman poster" data-category="movie" data-year="2021">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/fvqoI9r1GU2EFkc0xjZ6dKCuDVR.jpg">
+            <div class="title">스파이더맨: 노 웨이 홈</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="634649">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="parasite poster" data-category="movie" data-year="2021">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/eRM0PykovgtK4lin1D4BUql8TBa.jpg">
+            <div class="title">기생충</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="496243">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="spiritedaway poster" data-category="animation" data-year="2001">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/aZuBfbR0PnCb2up7lqHDsgJlLjs.jpg">
+            <div class="title">센과 치히로의 행방불명</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="129">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="greenbook poster" data-category="movie" data-year="2018">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/dyqQ12gZGwl5Y0R9UsLBDkZWOUA.jpg">
+            <div class="title">그린북</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="490132">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="theboyandtheheron poster" data-category="animation" data-year="2023">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/kmoScy628A6JWv8mmd2ofrYv16T.jpg">
+            <div class="title">그대들은 어떻게 살 것인가</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="508883">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="insideout1 poster" data-category="animation" data-year="2015">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/qVdrpBY920kKikUmPm89wig60Kd.jpg">
+            <div class="title">인사이드 아웃</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="150540">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="insideout2 poster" data-category="animation" data-year="2024">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/h3bvLqXAp0UJ5hNUvslVDJyVDB0.jpg">
+            <div class="title">인사이드 아웃2</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="1022789">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="findingdestiny poster" data-category="movie" data-year="2010">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/gByt7A0AK1bKCnQMCIdxOWCci5e.jpg">
+            <div class="title">김종욱 찾기</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="64882">자세히보기</a></div>
+          </div>
+        </li>
+  
+        <li>
+          <div class="citizenofakind poster" data-category="movie" data-year="2024">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/hu4nI6znjpdLqcq2SLfLRc3CJOQ.jpg">
+            <div class="title">시민덕희</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="696047">자세히보기</a></div>
+          </div>
+        </li>
+
+        <li>
+          <div class="xkong poster" data-category="movie" data-year="2024">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/4z1VMmlxHrziG45901esjB4dpIa.jpg">
+            <div class="title">신고질라</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="823464">자세히보기</a></div>
+          </div>
+        </li>
+
+        
+        <li>
+          <div class="thedarkknightrises poster" data-category="movie" data-year="2012">
+            <img src="https://media.themoviedb.org/t/p/w300_and_h450_bestv2/eq5P71YHwwaacEYKaQ72Wxy6BlT.jpg">
+            <div class="title">다크 나이트 라이즈</div>
+            <div class="more"><a href="#floatWindow" class="openwindow" value="49026">자세히보기</a></div>
+          </div>
+        </li>
+
+        
+
+      </ul>
+  </div>
+  <div id="all_tab"> 
+  </div>
+  <div id="nowshowing"> </div>
+  <div id="movie_tab"> </div>
+  
+  <div id="animation_tab"> </div>
+  
+  <div id="top10_tab"> </div>
+
+
+  <footer class="copyfoot">
+    <div class="copyImg"><img src="../younghyun/img/copyright.png" height="60px"></div>
+    <div class="copyTxt">서울특별시 강남구 그린로 4길 25 | +82 02-9494-9494 | GreenMV@greenmoives.co.kr <br>
+        <span id="copyright"> &copy 2024 Green Movies. All Rights Reserved</span></div>
+</footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,10 @@
+#box-office .arrow-box{
+  position: absolute;
+  z-index: 1;
+  top: -72px;
+  right: -10px;
+}
+#box-office .l-arrow{
+}
+#box-office .r-arrow{
+}

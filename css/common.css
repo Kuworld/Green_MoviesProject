@@ -1,0 +1,45 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  user-select: none;
+}
+
+section{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+section .main-screen{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.display-off{
+  display: none;
+}
+
+ul{
+  list-style: none;
+}
+
+.wrapper{
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+
+

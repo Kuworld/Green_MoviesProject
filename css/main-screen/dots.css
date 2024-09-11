@@ -1,0 +1,11 @@
+section .dots{
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+  z-index: 4;
+}
+
+section .dots a{
+  cursor: pointer;
+}

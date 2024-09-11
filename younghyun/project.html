@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>green moives</title>
+
+    <link rel="stylesheet" href="BScommon.css">
+    <link rel="stylesheet" href="copyfoot.css">
+
+    <link rel="stylesheet" href="../sangji/styles/floatwindow.css">
+    <link rel="stylesheet" href="../sangji/styles/scroll.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../sangji/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="BSjs.js"></script>
+
+    <script src="../sangji/scripts/moviedetail.js"></script>
+    <script src="../sangji/scripts/posterexpansion.js"></script>
+
+    //css header
+    <link rel="stylesheet" href="./../css/header.css">
+</head>
+
+<body>
+
+
+    <header class="topBar">
+        <div class="centerDiv">
+            <ul>
+                <li> <a href="./../index.html">ABOUT</a> </li>
+                <li class="active"> <a href="#">BUSINESS</a></li>
+                <li> <a href="./../sangji/works_index.html">WORKS</a></li>
+                <li> <a href="./../Inmo/press.html">PRESS</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- 탑 메뉴바 -->
+
+    <section class="BSmain">
+
+        <section class = "BSmainDiv1">
+            <p id="BSMainID">BUSINESS</p>
+        </section>
+
+        <section class = "BSmainDiv1_1">
+            <p id="BA">BUSINESS AREA</p>
+            <div class = "Div1_1box">
+                <div class = "Div1_1inn">
+                    <br>
+                    <img src="img/투자.gif" width="70px"><br>
+                    <p class="Div1_1boxTitle">투자<br></p>
+                    <img src="img/sline.jpg" height="20px"><br>
+                    <p>영화 콘텐츠의 소재를 발굴하고<br> 개발하며, 투자 및 제작 과정을<br> 관리합니다.</p>
+                </div>
+                <div class = "Div1_1inn">
+                    <br>
+                    <img src="img/유통.gif" width="70px"><br>
+                    <p class="Div1_1boxTitle">유통<br></p>
+                    <img src="img/sline.jpg" height="20px"><br>
+                    <p>콘텐츠의 국내 유통과 저작권<br> 관리를 통해 수익을 생성하는<br> 역할을 맡습니다.</p>
+                </div>
+                <div class = "Div1_1inn">
+                    <br>
+                    <img src="img/마케팅.gif" width="70px"><br>
+                    <p class="Div1_1boxTitle">마케팅<br></p>
+                    <img src="img/sline.jpg" height="20px"><br>
+                    <p>콘텐츠의 마케팅 전략과 실행,<br> PR 및 프로모션을 기획하고<br> 총괄합니다.</p>
+                </div>
+                <div class = "Div1_1inn">
+                    <br>
+                    <img src="img/기획.gif" width="70px"><br>
+                    <p class="Div1_1boxTitle">콘텐츠 기획<br></p>
+                    <img src="img/sline.jpg" height="20px"><br>
+                    <p>신규 플랫폼을 대상으로 한 <br>영상 콘텐츠의 기획, 투자, 및<br> 제작을 담당합니다.</p>
+                </div>
+            </div>
+        </section>
+            
+        <section class = "BSmainDiv1_2">
+            <div class="BSmainDiv1_2Imgbox">
+                <img src = "img/darkknight1.jpg" class="BSmainDiv1_2Img" alt="one">
+                <img src = "img/darkknight2.jpg" class="BSmainDiv1_2Img" alt="two">
+            </div>
+        </section>
+
+        <section class = "BSmainDiv2">
+            <div class = "Div2Text">
+                <br>
+                <p id="BSBaO">Organization</p>
+            
+                <img src="img/gmovie.png" height="200px">
+                <br><br>
+                <canvas id="BSline" width="1600px" height="200px"></canvas>
+                <br><br>
+            </div>
+            
+            
+            
+            <div class = "Div2innerBox" id="Div2inn">
+                <div class = "inn" id = "inn1">
+                    <table class="BSname">
+                        <tr><th class="BSth">방성영</th></tr> 
+                        <tr>
+                            <td class="innHidden">
+                                <br>
+                                <div>사이트의 제작 과정을 전체적으로 조율합니다.</div>
+                                <div>담당자가<br><a href="#BSmv1" class="BSpick" id="BSpick1">"pick"</a><br>해주는 영화</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+    
+                <div class = "inn" id = "inn2">
+                    <table class="BSname">
+                        <tr><th class="BSth">유영현</th></tr> 
+                        <tr>
+                            <td class="innHidden">
+                                <br>
+                                <div>사이트 제작 구성원들의 담당 업무를 소개합니다. </div>
+                                <div>담당자가<br><a href="#BSmv2" class="BSpick" id="BSpick2">"pick"</a><br>해주는 영화</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+    
+                <div class = "inn" id = "inn3">
+                    <table class="BSname">
+                        <tr><th class="BSth">한상지</th></tr> 
+                        <tr>
+                            <td class="innHidden">
+                                <br>
+                                <div>소개하는 영화 목록을 관리합니다.</div>
+                                <div>담당자가<br><a href="#BSmv3" class="BSpick" id="BSpick3">"pick"</a><br>해주는 영화</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+    
+                <div class = "inn" id = "inn4">
+                    <table class="BSname">
+                        <tr><th class="BSth">구인모</th></tr> 
+                        <tr>
+                            <td class="innHidden">
+                                <br>
+                                <div>영화 콘텐츠에 관한 소식들을 수집합니다.</div>
+                                <div>담당자가<br><a href="#BSmv4" class="BSpick" id="BSpick4">"pick"</a><br>해주는 영화</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div><!-- innerBox-->
+            
+        </section>
+        <!-- 조직도와 간단 설명 -->
+        
+        <section class ="BSmainDiv3">
+            <div class="BSmainDiv3Imgbox">
+                <img src = "img/avengers1.jpg" class="BSmainDiv3Img" alt="one">
+                <img src = "img/avengers2.jpg" class="BSmainDiv3Img" alt="two">
+            </div>
+        </section>
+        <!-- 중간 이미지 -->
+        
+    
+        <section class = "BSmainDiv4">
+            
+
+            <div>
+                <br>
+                <p id="BSmainDiv4p">"pick" up movies</p>
+            </div>
+
+            <div class= "BSmainDiv4Big">
+                
+
+                <p id="BSmainDiv4p2">영화에 대해 더 알고 싶다면 포스터를 클릭해 보세요!</p>
+                
+                <div class ="BSmainDiv4Imgbox">
+                    <a href="#floatWindow" class="openwindow" value="823464"><img src= "img/mv1.jpg" id="BSmv1" class="BSchooseImg"></a>
+                    <a href="#floatWindow" class="openwindow" value="155"><img src= "img/mv2.jpg" id="BSmv2" class="BSchooseImg"></a>
+                    <a href="#floatWindow" class="openwindow" value="76600"><img src= "img/mv3.jpg" id="BSmv3" class="BSchooseImg"></a>
+                    <a href="#floatWindow" class="openwindow" value="129"><img src= "img/mv4.jpg" id="BSmv4" class="BSchooseImg"></a>
+                    <img src= "img/back.jpg" id="BSmv5" class="BSchooseImg">
+                </div>
+
+                <div id="BSbuttonBox">
+                    <input type="button" value="포스터 초기화" id = "BSbutton">
+                </div>
+                
+            </div>
+            
+            <div class="BStop">
+                <button id="BStopbut">▲<br>TOP</button>
+            </div>
+        </section>
+        <!-- @@픽한 영화들 포스터로  이미지 교체-->
+        <!-- @@하이퍼링크에 영화들에 해당하는 value값으로 수정(상지씨거 참고) -->
+
+        
+    </section>
+
+
+    <!--  상지씨 것 적용  -->
+    <div id="floatwindowclose"> <a href="#" class="close">
+        <img src="../sangji/image/close.png" alt="닫힘"/> </div> 
+  
+      <div id="floatWindow"> 
+        <dl>
+          <dt>
+              
+          </dt>
+            <dd>
+              <div id="movietrailer">  </div>
+              <div id="overview">
+                <div id="movieposters">
+                  <img id="img" style="cursor: pointer; margin-top:20px;" height="500px" >
+                  <div id="moviepostersmall">
+                      <div id="movieposter1"> <a class="imgLink selectedImage" href="#"> </a> </div>
+                      <div id="movieposter2"> <a class="imgLink" href="#"> </a> </div>
+                      <div id="movieposter3"> <a class="imgLink" href="#"> </a> </div>
+                  </div>
+              </div>
+                        
+                  <div id="moviedetails">
+                    <div id="movietitle"> </div>
+                    <div id="moviedetailtable"></div>
+                    <div id="movieplot"></div>
+                    <div id="snslink">
+                      <img id="youtube" src="../sangji/image/youtube.png" width="50px"> 
+                      <img id="facebook" src="../sangji/image/facebook.png" width="50px"> 
+                      <img id="instagram" src="../sangji/image/instagram.png" width="50px">
+                      <img id="twitter" src="../sangji/image/twitter.png" width="50px">
+                    </div>
+                  </div>
+                </div>
+            </dd>
+          </dl>
+          
+          </div>
+
+          <div id="scrollimage"> <img src="../sangji/image/scroll.png" style="height: 80px;"></div>
+          <!-- 상지씨 것 적용 -->
+          <!-- floatwindow.css / jquery-migrate-1.4.1.min.js / moviedetail.js 추가한거 -->
+          <!-- 이미지들 링크 수정,  추가 css, js만 더 넣어주면 됨  -->
+
+
+    <footer class="copyfoot">
+        <div class="copyImg"><img src="img/copyright.png" height="60px"></div>
+        <div class="copyTxt">서울특별시 강남구 그린로 4길 25 | +82 02-9494-9494 | GreenMV@greenmoives.co.kr <br>
+            <span id="copyright"> &copy 2024 Green Movies. All Rights Reserved</span></div>
+    </footer>
+
+
+    
+</body>
+
+</html>

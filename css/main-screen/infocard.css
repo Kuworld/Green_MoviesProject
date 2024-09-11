@@ -1,0 +1,86 @@
+
+.main-screen-2 .info-card{
+  position: absolute;
+  top: 0;
+  left: -500px;
+  width: 100%;
+  height: 100%;
+}
+
+.main-screen-3 .info-card{
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: 100%;
+  height: 100%;
+}
+
+.main-screen-2 .inner-info-card, .main-screen-3 .inner-info-card{
+ position: absolute;
+ top: 0;
+ height: 100%;
+ left: 0;
+ text-align: center;
+}
+
+.main-screen-2 .inner-info-card ul, .main-screen-3 .inner-info-card ul{
+  width: 490px;
+}
+
+.main-screen-2 .inner-info-card li, .main-screen-3 .inner-info-card li{
+  margin-top: 30px;
+  color: white;
+}
+
+.main-screen-2 .inner-inner-info-card, .main-screen-3 .inner-inner-info-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main-screen-2 .title, .main-screen-3 .title{
+  animation: textMove 1.5s;
+}
+
+.main-screen-2 .intro, .main-screen-3 .intro{
+  animation: textMove 2s;
+}
+
+.main-screen-2 .btn, .main-screen-3 .btn{
+  animation: textMove 2.5s;
+  position: relative;
+}
+
+@keyframes textMove{
+  0%{
+    transform: translate(0, 160px);
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.viewDetail{
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  width: 136px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  text-align: center;
+  transition:  all 0.3s;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.viewDetail:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}

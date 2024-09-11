@@ -1,0 +1,44 @@
+#works_top {
+  background: #fff;
+  background-size:cover;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 300px; 
+  display: flex;
+
+  border-bottom-left-radius: 50% 60px;
+  border-bottom-right-radius: 50% 60px;
+}
+
+#works_top img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#works_top span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  font-weight: bold;
+  animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}

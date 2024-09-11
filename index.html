@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Movies</title>
+  </head>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/bgs.css">
+  <link rel="stylesheet" href="css/main-screen/1/circle.css">
+  <link rel="stylesheet" href="css/main-screen/1/infocard.css">
+  <link rel="stylesheet" href="css/main-screen/infocard.css">
+  <link rel="stylesheet" href="css/main-screen/maincommon.css">
+  <link rel="stylesheet" href="css/main-screen/dots.css">
+  <link rel="stylesheet" href="css/main-screen/scroll.css">
+  <link rel="stylesheet" href="css/article/common.css">
+  <link rel="stylesheet" href="css/article/tabs.css">
+  <link rel="stylesheet" href="css/article/poster.css">
+  <link rel="stylesheet" href="css/boxoffice/common.css">
+  <link rel="stylesheet" href="css/boxoffice/infobox.css">
+  <link rel="stylesheet" href="css/boxoffice/posterbox.css">
+  <link rel="stylesheet" href="css/boxoffice/arrows.css">
+  <link rel="stylesheet" href="css/boxoffice/cinemabox.css">
+  <link rel="stylesheet" href="css/social-media.css">
+  <link rel="stylesheet" href="./younghyun/copyfoot.css">
+
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="index.js"></script>
+  <script src="mainjs/util.js"></script>
+  <script src="mainjs/dots.js"></script>
+  <script src="mainjs/articlecommon.js"></script>
+  <script src="mainjs/scrollobj.js"></script>
+  <script src="mainjs/arrows.js"></script>
+  <script src="mainjs/tabsmenu.js"></script>
+  <script src="mainjs/boxoffice/movieinfo.js"></script>
+  <script src="mainjs/boxoffice/arrows.js"></script>
+  <script src="mainjs/boxoffice/scrollobj.js
+  "></script>
+  <script src="mainjs/boxoffice/expand.js"></script>
+
+  //WORKS
+  <link rel="stylesheet" href="./sangji/styles/floatwindow.css">
+  <link rel="stylesheet" href="./sangji/styles/scroll.css">
+  <script src="./sangji/js/jquery-migrate-1.4.1.min.js"></script>
+  <script src="./sangji/scripts/moviedetail.js"></script>
+  <script src="./sangji/scripts/posterexpansion.js"></script>
+  <body>
+    <header class="topBar">
+      <div class="centerDiv">
+        <ul>
+          <li class="active"> <a href="#">ABOUT</a> </li>
+          <li> <a href="./younghyun/project.html">BUSINESS</a></li>
+          <li> <a href="./sangji/works_index.html">WORKS</a></li>
+          <li> <a href="./Inmo/press.html">PRESS</a></li>
+        </ul>
+      </div>
+      <div class="social-media">
+        <img src="./assets/img/socialmedia/socialmedia.png" height="30" width="30">
+      </div>
+    </header>
+    <div class="pop-up">
+    </div>
+    <div class="cinema-box">
+      <div class="vid-container">
+        <iframe width="660" height="460" src="">
+        </iframe>
+        <a class="close" onclick="closeCinemaBox()">
+          <img src="./assets/img/close.png" height="35" width="35">
+        </a>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div>
+        <section>
+          <ul class="bgs">
+            <li class="bg1"></li>
+            <li class="bg2" style="display: none;"></li>
+            <li class="bg3" style="display: none;"></li>
+          </ul>
+          <ul class="main-screen">
+            <li class="main-screen-1 display-off">
+              <div class="circle-box-container">
+                <div class="circle-box">
+                  <div class="circle">
+                    <img src="assets/img/oscar.webp" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="info-card">
+                <div class="inner-info-card">
+                  <div class="inner-inner-info-card">
+                    <ul>
+                      <li class="logo">
+                        <img src="./gmv(white).png" height="400" width="500"> 
+                      </li>
+                      <li class="intro">
+                        <span>영화로 전 세계 대중과 소통하는 컬처 크리에이터 영화사업부</span>
+                      </li>
+                      <li class="btn">
+                        <a class="viewDetail" href="./younghyun/project.html">자세히보기</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="main-screen-2 display-off">
+              <div class="info-card">
+                <div class="inner-info-card">
+                  <div class="inner-inner-info-card">
+                    <ul>
+                      <li class="title">
+                        <h1>매드 맥스</h1>
+                      </li>
+                      <li class="intro">
+                        <p> 핵전쟁으로 멸망한 22세기. 얼마 남지 않은 물과 기름을 차지한 독재자 임모탄 조가 살아남은 인류를 지배한다. 한편 아내와 딸을 잃고 살아남기 위해 사막을 떠돌던 맥스는 임모탄의 부하들에게 납치되어 노예로 끌려가고, 폭정에 반발한 외팔의 사령관 퓨리오사는 인류 생존의 열쇠를 쥔 임모탄의 여인들을 탈취해 분노의 도로로 폭주한다. 이에 임모탄의 전사인 워보이들과 신인류 눅스는 피주머니 신세로 전락한 맥스를 이끌고 퓨리오사의 뒤를 쫓는데...</p>
+                      </li>
+                      <li class="btn">
+                        <a class="viewDetail openwindow" href="#floatWindow" value="76341">자세히보기</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="main-screen-3 display-off">
+              <div class="info-card">
+                <div class="inner-info-card">
+                  <div class="inner-inner-info-card">
+                    <ul>
+                      <li class="title">
+                        <h1>탑건</h1>
+                      </li>
+                      <li class="intro">
+                        <p> 최고의 파일럿이자 전설적인 인물 매버릭은 자신이 졸업한 훈련학교 교관으로 발탁된다. 그의 명성을 모르던 팀원들은 매버릭의 지시를 무시하지만 실전을 방불케 하는 상공 훈련에서 눈으로 봐도 믿기 힘든 전설적인 조종 실력에 모두가 압도된다. 매버릭의 지휘 아래 견고한 팀워크를 쌓아가던 팀원들에게 국경을 뛰어넘는 위험한 임무가 주어지자 매버릭은 자신이 가르친 동료들과 함께 마지막이 될지 모를 하늘 위 비행에 나서는데... </p>
+                      </li>
+                      <li class="btn">
+                        <a class="viewDetail openwindow" href="#floatWindow" value="361743">자세히보기</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="dots">
+            <a onclick="circleClick(this)" id="dot1" data-next-dot="#dot2" data-main-screen=".main-screen-1"
+              data-bg=".bg1">
+              <canvas width="26" height="26"></canvas>
+            </a>
+            <a onclick="circleClick(this)" id="dot2" data-next-dot="#dot3" data-main-screen=".main-screen-2"
+              data-bg=".bg2">
+              <canvas width="26" height="26"></canvas>
+            </a>
+            <a onclick="circleClick(this)" id="dot3" data-next-dot="#dot1" data-main-screen=".main-screen-3"
+              data-bg=".bg3">
+              <canvas width="26" height="26"></canvas>
+            </a>
+          </div>
+          <div class="scroll">
+            <span>Scroll</span>
+            <div>
+              <img src="assets/img/arrowdown.png" height="15" width="15">
+            </div>
+          </div>
+        </section>
+        <article>
+          <div class="tabs">
+            <a class="menu active" onclick="menuClickEvent(this)">ALL TIME CLASSICS</a>
+          </div>
+          <div class="poster-list">
+            <div class="detail-btn">
+              <a href="">자세히 보기</a>
+            </div>
+            <a class="arrows l-arrow" onclick="arrowEvent(this)">
+              <img src="assets/img/arrows/l-arrow.png" alt="">
+            </a>
+            <div class="poster-box">
+              <ul data-went-right="no" data-carouseling="no">
+                <li>
+                  <div class="bg">
+                    <div class="bg-content"
+                      style="background: url(./assets/img/posters/starwars.webp); background-size: cover;">
+
+                    </div>
+                    <div class="detail-btn">
+                      <a class="openwindow" href="#floatWindow"  value="11"> 
+                        <span>자세히 보기</span>
+                      </a>
+                    </div>
+                    <div class="bg-covered">
+                    </div>
+                  </div>
+                  <span class="title">스타워즈 <span class="state">1977.05.25</span>
+                  </span>
+                  <span class="type"> SF <span class="eng">|</span> 조지 루카스 </span>
+                </li>
+                <li>
+                  <div class="bg">
+                    <div class="bg-content"
+                      style="background: url(./assets/img/posters/jaws.jpg); background-size: cover;">
+                    </div>
+                    <div class="detail-btn">
+                      <a class="openwindow" href="#floatWindow"  value="578"> 
+                        <span>자세히 보기</span>
+                      </a>
+                    </div>
+                    <div class="bg-covered">
+                    </div>
+                  </div>
+                  <span class="title">죠스 <span class="state">1975.06.20</span>
+                  </span>
+                  <span class="type"> 재난 <span class="eng">|</span> 스티븐 스필버그 </span>
+                </li>
+                <li>
+                  <div class="bg">
+                    <div class="bg-content"
+                      style="background: url(./assets/img/posters/jurassicpark.jpg); background-size: cover;">
+                    </div>
+                    <div class="detail-btn">
+                      <a class="openwindow" href="#floatWindow"  value="329"> 
+                        <span>자세히 보기</span>
+                      </a>
+                    </div>
+                    <div class="bg-covered">
+                    </div>
+                  </div>
+                  <span class="title">쥬라기 공원 <span class="state">1993.06.11</span>
+                  </span>
+                  <span class="type"> 액션 <span class="eng">|</span> 스티븐 스필버그 </span>
+                </li>
+                <li>
+                  <div class="bg">
+                    <div class="bg-content"
+                      style="background: url(./assets/img/posters/spirited_away.jpg); background-size: cover;">
+                    </div>
+                    <div class="detail-btn">
+                      <a class="openwindow" href="#floatWindow"  value="129"> 
+                        <span>자세히 보기</span>
+                      </a>
+                    </div>
+                    <div class="bg-covered">
+                    </div>
+                  </div>
+                  <span class="title">센과 치히로의 행방불명 <span class="state">2002.08.31</span>
+                  </span>
+                  <span class="type"> 에니메이션 <span class="eng">|</span> 미야자키 하야오 </span>
+                </li>
+              </ul>
+            </div>
+            <a class="arrows r-arrow" onclick="arrowEvent(this)">
+              <img src="assets/img/arrows/r-arrow.png" alt="">
+            </a>
+          </div>
+          <div id="box-office">
+            <h3>BOX OFFICE TOP 10</h3>
+            <div class="box-office-contents">
+              <div class="bg">
+                <img class="active" src="assets/img/boxofficecircles/circle01.jpg">
+                <img src="assets/img/boxofficecircles/circle02.jpg">
+                <img src="assets/img/boxofficecircles/circle03.jpg">
+                <img src="assets/img/boxofficecircles/circle04.jpg">
+                <img src="assets/img/boxofficecircles/circle05.jpg">
+                <img src="assets/img/boxofficecircles/circle06.jpg">
+                <img src="assets/img/boxofficecircles/circle07.jpg">
+                <img src="assets/img/boxofficecircles/circle08.jpg">
+                <img src="assets/img/boxofficecircles/circle09.jpg">
+                <img src="assets/img/boxofficecircles/circle10.jpg">
+              </div>
+              <div class="info-box">
+                <div class="info active">
+                  <ul>
+                    <li class="title"></li>
+                    <li class="type"></li>
+                    <li class="desc"></li>
+                    <li class="btn">
+                      <a href="#floatWindow" class="openwindow">
+                        <span>자세히 보기</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="info">
+                  <ul>
+                    <li class="title"></li>
+                    <li class="type"></li>
+                    <li class="desc"></li>
+                    <li class="btn">
+                      <a href="#floatWindow" class="openwindow">
+                        <span>자세히 보기</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="poster-box">
+                <div>
+                  <ul>
+                  </ul>
+                  </li>
+                </div>
+              </div>
+              <div class="arrow-box">
+                <a class="l-arrow" onclick="boxOfficeArrowEvent('left')">
+                  <img src="./assets/img/arrows/l-arrow.png" alt="">
+                </a>
+                <a class="r-arrow" onclick="boxOfficeArrowEvent('right')">
+                  <img src="./assets/img/arrows/r-arrow.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div id="floatwindowclose"> <a href="#" class="close">
+      <img src="./assets/img/close.png" alt="닫힘"/> </div>
+
+    <div id="scrollimage"> <img src="./sangji/image/scroll.png" style="height: 80px;"></div>
+
+    <div id="floatWindow"> 
+      <dl>
+        <dt>
+            
+        </dt>
+          <dd> 
+            
+            <div id="movietrailer"> </div>
+            <div id="overview">
+              <div id="movieposters">
+                <img id="img" style="cursor: pointer; margin-top:20px;" height="500px" >
+                <div id="moviepostersmall">
+                    <div id="movieposter1"> <a class="imgLink selectedImage" href="#"> </a> </div>
+                    <div id="movieposter2"> <a class="imgLink" href="#"> </a> </div>
+                    <div id="movieposter3"> <a class="imgLink" href="#"> </a> </div>
+                </div>
+            </div>
+                      
+                <div id="moviedetails">
+                  <div id="movietitle"> </div>
+                  <div id="moviedetailtable"></div>
+                  <div id="movieplot"></div>
+                  <div id="snslink">
+                    <img id="youtube" src="./sangji/image/youtube.png" width="50px"> 
+                    <img id="facebook" src="./sangji/image/facebook.png" width="50px"> 
+                    <img id="instagram" src="./sangji/image/instagram.png" width="50px">
+                    <img id="twitter" src="./sangji/image/twitter.png" width="50px">
+                  </div>
+                </div>
+              </div>
+          </dd>
+        </dl>
+        
+        </div>
+
+    <footer class="copyfoot">
+        <div class="copyImg"><img src="./younghyun/img/copyright.png" height="60px"></div>
+        <div class="copyTxt">서울특별시 강남구 그린로 4길 25 | +82 02-9494-9494 | GreenMV@greenmoives.co.kr <br>
+            <span id="copyright"> &copy 2024 Green Movies. All Rights Reserved</span></div>
+    </footer>
+  </body>
+
+</html>
